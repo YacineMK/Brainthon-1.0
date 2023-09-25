@@ -1,0 +1,97 @@
+nav {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    z-index: 999;
+    transition: background-color 0.7s ease, color 0.7s ease; /* Add transitions for background-color and color */
+}
+
+.center-bar {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color:#F2F2F2; 
+    display: flex;
+    margin-top: 10px;
+    width: 500px;
+    justify-content: space-between;
+    border-radius: 28px; 
+    padding: 6px 6px;
+    margin-left: 100px;
+    transition: background-color 0.7s ease; /* Add transition for background-color */
+}
+
+.center-bar .i {
+    padding: 10px;
+    border: #FFFFFF;
+    padding: 8px 14px; 
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500; 
+    border-radius: 22px;
+    transition: background-color 0.7s ease, color 0.7s ease; /* Add transitions for background-color and color */
+}
+
+/* Dark mode styles */
+nav.dark-mode .center-bar,
+nav.dark-mode .right-bar button {
+    background-color: #2F3030;
+    color: #F2F2F2;
+}
+
+/* Transitions for dark mode elements */
+nav.dark-mode .center-bar .i.i.white,
+nav.dark-mode .center-bar .i.i.whitee,
+nav.dark-mode .center-bar .i.i.whiteee {
+    color: #2F3030;
+}
+.right-bar {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px; 
+}
+.right-bar button {
+    font-size: 24px;
+    display: flex;
+    width: 50px;
+    height: 50px; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 1000px;
+    background-color: #F2F2F2;
+    border: #F2F2F2;
+  transition: background-color 0.7s ease; 
+
+}
+.i {
+  cursor: pointer;
+  transition: background-color 0.7s ease; 
+}
+.i.white {
+    background-color: #fff;
+}
+.i.whitee {
+    background-color: #fff;
+}
+.i.whiteee {
+    background-color: #fff;
+}
+nav.dark-mode .center-bar .i.i.white {
+    color: #2F3030;
+}
+nav.dark-mode .center-bar .i.i.whitee {
+    color: #2F3030;
+}
+nav.dark-mode .center-bar .i.i.whiteee {
+    color: #2F3030;
+}
+
+#link{
+    text-decoration: none;
+    color: black;
+}
